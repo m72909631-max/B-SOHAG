@@ -1,3 +1,4 @@
+console.log("Supabase connected:", !!supabaseClient);
 
 const books = [
   {
