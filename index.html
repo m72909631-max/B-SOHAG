@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10131d">
+  <title>B SOHAG | বাংলা ডিজিটাল বই</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="logo" href="#">B <span>SOHAG</span></a>
+    <nav>
+      <a href="#home">হোম</a>
+      <a href="#library">বইয়ের সংগ্রহ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">A DIGITAL BOOK EXPERIENCE</p>
+        <h1>গল্পের পাতায়<br><span>হারিয়ে যাও</span></h1>
+        <p>শব্দ, অনুভূতি আর কল্পনার এক নিজস্ব জগৎ।</p>
+        <a class="main-btn" href="#library">বই পড়া শুরু করো</a>
+      </div>
+      <div class="hero-decoration">B</div>
+    </section>
+
+    <section class="library section" id="library">
+      <p class="eyebrow">OUR COLLECTION</p>
+      <h2 class="section-title">বইয়ের সংগ্রহ</h2>
+
+      <div class="book-card">
+        <div class="book-cover">
+          <div class="cover-inner">
+            <span class="cover-small">একটি বাংলা উপন্যাস</span>
+            <h3>অপেক্ষার<br>ওপারে তুমি</h3>
+            <span class="cover-line"></span>
+            <p>B SOHAG PUBLICATION</p>
+          </div>
+        </div>
+
+        <div class="book-info">
+          <span class="category">বাংলা উপন্যাস</span>
+          <h3>অপেক্ষার ওপারে তুমি</h3>
+          <p>কিছু অপেক্ষা, কিছু স্মৃতি আর না বলা অনুভূতির গল্প।</p>
+          <button class="main-btn" onclick="openStory()">বইটি পড়ুন →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reader hidden" id="reader">
+      <div class="reader-heading">
+        <p class="eyebrow">NOW READING</p>
+        <h2>অপেক্ষার ওপারে তুমি</h2>
+        <p>পাতার কোণায় চাপ দাও অথবা পাশে টেনে পাতা ওল্টাও</p>
+      </div>
+
+      <div class="book-stage">
+        <div id="flipbook"></div>
+      </div>
+
+      <div class="reader-controls">
+        <button onclick="previousChapter()">← আগের পৃষ্ঠা</button>
+        <span id="chapterNumber">1 / 4</span>
+        <button onclick="nextChapter()">পরের পৃষ্ঠা →</button>
+      </div>
+
+      <button class="back-btn" onclick="closeStory()">← বইয়ের সংগ্রহে ফিরে যাও</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 B SOHAG. All Rights Reserved.</p>
+    <p>একটি নিজস্ব ডিজিটাল প্রকাশনা উদ্যোগ।</p>
+  </footer>
+
+  <script src="assets/page-flip.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
